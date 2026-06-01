@@ -35,7 +35,7 @@ export function Hero() {
         >
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1.5 text-xs font-medium text-muted-foreground transition-all duration-300 hover:border-accent/50 hover:shadow-sm">
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
-            Healthcare &amp; Life Sciences AI
+            Healthcare &amp; Life Sciences
           </span>
 
           <h1 className="mt-6 text-balance text-[36px] font-bold leading-[1.1] tracking-tight text-primary sm:text-4xl lg:text-[52px]">

@@ -130,10 +130,10 @@ export default function PonteOpenPage() {
                 asChild
                 className="group h-12 rounded-full bg-accent px-6 text-base font-semibold text-primary transition-all duration-300 hover:bg-accent/90 hover:shadow-lg"
               >
-                <Link href="#waitlist">
-                  Join the Waitlist
-                  <ArrowRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                </Link>
+                <a href="https://forms.cloud.microsoft/r/7X76FfMgJT?origin=lprLink" target="_blank" rel="noopener noreferrer">
+                    Join the Waitlist
+                    <ArrowRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  </a>
               </Button>
               <Button
                 asChild
@@ -166,90 +166,7 @@ export default function PonteOpenPage() {
         </div>
       </section>
 
-      {/* Waitlist form */}
-      <section id="waitlist" className="bg-secondary/60 py-20 lg:py-28">
-        <div className="mx-auto max-w-[1080px] px-6 lg:px-10">
-          <div
-            ref={formRef}
-            className={cn(
-              "grid grid-cols-1 gap-12 transition-all duration-700 ease-out lg:grid-cols-[1fr_minmax(0,1.1fr)] lg:gap-16",
-              formVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-            )}
-          >
-            <div>
-              <span className="text-xs font-semibold uppercase tracking-[0.22em] text-accent-foreground/70">
-                Join our waitlist
-              </span>
-              <h2 className="mt-3 text-balance text-3xl font-bold leading-[1.15] tracking-tight text-primary sm:text-4xl">
-                Be the first to experience unparalleled business transparency.
-              </h2>
-              <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-                We respect your privacy. Your information will be kept
-                confidential and used solely for waitlist communications.
-              </p>
-            </div>
-
-            <form className="rounded-2xl border border-border bg-card p-7 shadow-[0_25px_70px_-30px_rgba(6,26,64,0.2)] lg:p-8">
-              <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-                <div className="space-y-2 sm:col-span-2">
-                  <Label htmlFor="po-name" className="text-sm font-medium text-primary">
-                    Full Name
-                  </Label>
-                  <Input
-                    id="po-name"
-                    name="name"
-                    placeholder="Jane Doe"
-                    className="h-11 rounded-lg border-border bg-background text-foreground"
-                  />
-                </div>
-                <div className="space-y-2 sm:col-span-2">
-                  <Label htmlFor="po-email" className="text-sm font-medium text-primary">
-                    Email <span className="text-brand-blue">*</span>
-                  </Label>
-                  <Input
-                    id="po-email"
-                    name="email"
-                    type="email"
-                    required
-                    placeholder="you@company.com"
-                    className="h-11 rounded-lg border-border bg-background text-foreground"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="po-org" className="text-sm font-medium text-primary">
-                    Organization
-                  </Label>
-                  <Input
-                    id="po-org"
-                    name="organization"
-                    placeholder="Company name"
-                    className="h-11 rounded-lg border-border bg-background text-foreground"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="po-role" className="text-sm font-medium text-primary">
-                    Role
-                  </Label>
-                  <Input
-                    id="po-role"
-                    name="role"
-                    placeholder="Your role"
-                    className="h-11 rounded-lg border-border bg-background text-foreground"
-                  />
-                </div>
-              </div>
-
-              <Button
-                type="submit"
-                className="group mt-7 h-12 w-full rounded-full bg-primary text-base font-semibold text-primary-foreground transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25"
-              >
-                Join the Waitlist
-                <ArrowRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </Button>
-            </form>
-          </div>
-        </div>
-      </section>
+      {/* Waitlist removed — external Microsoft Form will be used via CTA button */}
 
       {/* Benefits */}
       <section className="py-20 lg:py-28">
