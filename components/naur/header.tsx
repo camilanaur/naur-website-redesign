@@ -87,9 +87,6 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <Button asChild variant="ghost" className="h-10 rounded-full px-5 text-sm font-medium text-foreground hover:bg-secondary">
-            <Link href="/login">Log In</Link>
-          </Button>
           <Button asChild className="h-10 rounded-full bg-primary px-5 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
             <Link href="/contact-us">Get a Demo</Link>
           </Button>
@@ -142,9 +139,7 @@ export function Header() {
             </Link>
           ))}
           <div className="mt-3 flex flex-col gap-2 border-t border-border pt-4">
-            <Button asChild variant="outline" className="h-12 rounded-full border-border bg-transparent text-foreground">
-              <Link href="/login">Log In</Link>
-            </Button>
+            {/* Login removed */}
             <Button asChild className="h-12 rounded-full bg-primary text-primary-foreground hover:bg-primary/90">
               <Link href="/contact-us">Get a Demo</Link>
             </Button>
